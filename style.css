@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #ffffff;
+    color: #3b4d3f;
+}
+
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #556b2f;
+}
+
+.boas-vindas {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.frase {
+    font-style: italic;
+    margin: 30px 0;
+}
+
+.botao {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #6b8e23;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #556b2f;
+}
+
+.presente {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #dcdcdc;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+}
+
+.presente img {
+    width: 80px;
+    border-radius: 8px;
+}
+
+.presente input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.presente a {
+    color: #6b8e23;
+    font-size: 14px;
+}
