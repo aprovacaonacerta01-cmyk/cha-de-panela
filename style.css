@@ -68,3 +68,27 @@ h1, h2 {
     color: #6b8e23;
     font-size: 14px;
 }
+@media (max-width: 768px) {
+
+    .presente {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .presente img {
+        margin-bottom: 15px;
+    }
+
+    .presente input {
+        margin-top: 10px;
+        width: 80%;
+    }
+
+    .botao {
+        width: 100%;
+    }
+
+    .paleta-img {
+        max-width: 90%;
+    }
+}
