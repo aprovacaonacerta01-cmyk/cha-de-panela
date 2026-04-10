@@ -7,10 +7,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <audio autoplay loop>
+<audio id="musica" autoplay loop muted>
   <source src="musica.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+window.addEventListener("load", () => {
+  const audio = document.getElementById("musica");
+
+  // tenta tocar automaticamente
+  audio.play().then(() => {
+    // depois de 1 segundo, tira o mudo
+    setTimeout(() => {
+      audio.muted = false;
+    }, 1000);
+  }).catch(() => {
+    console.log("Autoplay bloqueado 😢");
+  });
+});
+</script>
     <div class="container">
         <h1>Chá de Panela Camila e Lucas 💚</h1>
 
