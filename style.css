@@ -30,17 +30,19 @@ h1, h2 {
 .botao {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #6b8e23;
+    background: linear-gradient(135deg, #6b8e23, #556b2f);
     color: white;
     text-decoration: none;
-    border-radius: 8px;
+    border-radius: 30px;
     font-size: 16px;
     border: none;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .botao:hover {
-    background-color: #556b2f;
+   transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .presente {
