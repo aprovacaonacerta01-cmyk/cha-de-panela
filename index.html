@@ -12,13 +12,20 @@
 </audio>
 
 <script>
-document.addEventListener("click", function tocarUmaVez() {
-  const audio = document.getElementById("musica");
+function tocarEMudarPagina(event) {
+  event.preventDefault();
+
+  const audio = new Audio("musica.mp3");
   audio.play();
-  
-  // remove o evento depois do primeiro toque
-  document.removeEventListener("click", tocarUmaVez);
-});
+
+  // salva que a música deve continuar
+  localStorage.setItem("musica", "tocando");
+
+  // pequeno delay pra garantir que começou
+  setTimeout(() => {
+    window.location.href = "presentes.html";
+  }, 300);
+}
 </script>
     <div class="container">
         <h1>Chá de Panela Camila e Lucas 💚</h1>
@@ -35,9 +42,9 @@ document.addEventListener("click", function tocarUmaVez() {
         Obs: os presentes devem seguir a paleta das cores branco, areia, bege e palha 🤍
     </p>
 
-        <a href="presentes.html" class="botao">
-            Ver a lista de presentes
-        </a>
+       <a href="presentes.html" class="botao" onclick="tocarEMudarPagina(event)">
+    Ver a lista de presentes
+</a>
     </div>
 
 </body>
