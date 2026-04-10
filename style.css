@@ -91,4 +91,31 @@ h1, h2 {
     .paleta-img {
         max-width: 90%;
     }
+    /* Layout para celular */
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .detalhes {
+    font-size: 14px;
+    text-align: center;
+  }
+}
 }
