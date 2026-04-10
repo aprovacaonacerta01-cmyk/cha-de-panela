@@ -68,54 +68,52 @@ h1, h2 {
     color: #6b8e23;
     font-size: 14px;
 }
-@media (max-width: 768px) {
-
-    .presente {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .presente img {
-        margin-bottom: 15px;
-    }
-
-    .presente input {
-        margin-top: 10px;
-        width: 80%;
-    }
-
-    .botao {
-        width: 100%;
-    }
-
-    .paleta-img {
-        max-width: 90%;
-    }
-    /* Layout para celular */
+/* Centralização perfeita no celular */
 @media (max-width: 768px) {
 
   body {
-    padding: 10px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
   }
 
   .container {
     width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
     padding: 15px;
-  }
-
-  h1 {
-    font-size: 22px;
+    box-sizing: border-box;
     text-align: center;
   }
 
-  p {
-    font-size: 16px;
+  h1, h2, p {
     text-align: center;
   }
 
   .detalhes {
-    font-size: 14px;
     text-align: center;
   }
+
+  /* Cards da lista de presentes */
+  .card, .item, .presente {
+    width: 100%;
+    margin: 15px auto;
+    box-sizing: border-box;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+body {
+  display: flex;
+  justify-content: center;
 }
 }
