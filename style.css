@@ -68,20 +68,17 @@ h1, h2 {
     color: #6b8e23;
     font-size: 14px;
 }
-/* Centralização perfeita no celular */
 @media (max-width: 768px) {
 
   body {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
   }
 
   .container {
     width: 100%;
     max-width: 400px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 15px;
     box-sizing: border-box;
     text-align: center;
@@ -95,25 +92,20 @@ h1, h2 {
     text-align: center;
   }
 
-  /* Cards da lista de presentes */
-  .card, .item, .presente {
-    width: 100%;
-    margin: 15px auto;
-    box-sizing: border-box;
+  /* Ajuste dos presentes (AQUI ESTAVA O PROBLEMA PRINCIPAL) */
+  .presente {
+    flex-direction: column; /* empilha no celular */
+    align-items: center;
+    text-align: center;
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
+  .presente img {
+    margin-bottom: 10px;
   }
 
-  input {
+  .presente input {
     width: 100%;
-    box-sizing: border-box;
+    margin-top: 10px;
   }
-}
-body {
-  display: flex;
-  justify-content: center;
-}
+
 }
